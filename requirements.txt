@@ -1,0 +1,18 @@
+# APK SDK分析工具 - 依赖说明
+#
+# 本工具仅使用Python标准库，无需安装任何第三方依赖包
+#
+# 标准库要求：Python 3.6+
+# - sys
+# - os
+# - zipfile
+# - re
+# - time
+# - json
+# - collections
+# - io
+#
+# 安装说明：
+# 1. 确保已安装 Python 3.6 或更高版本
+# 2. 无需运行 pip install，直接运行脚本即可
+# 3. 验证环境：python -c "import sys; print(sys.version)"
