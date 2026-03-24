@@ -1,0 +1,233 @@
+{
+  "manifest_patterns": {
+    "广告与变现": {
+      "优量汇(腾讯广告)": [
+        "GDTAD", "GDTMobSDK", "GDTSDK", "TencentAd", "qq.e.ads"
+      ],
+      "穿山甲(字节跳动)": [
+        "Pangle", "CSJAd", "BytedanceAd", "TikTokAd"
+      ],
+      "快手广告": [
+        "KSAd", "KuaishouAd", "KSAD"
+      ],
+      "Mintegral": ["Mintegral", "MTGSDK", "MintegralAd"],
+      "AppLovin": ["AppLovin", "MAXAds", "AppLovinSDK"],
+      "Google AdMob": ["GoogleMobileAds", "GADBannerView", "GADInterstitial", "Admob"],
+      "IronSource": ["IronSource", "ISAd", "IronSourceSDK"],
+      "Unity Ads": ["UnityAds", "Unity", "unity.ads"],
+      "Appodeal": ["Appodeal", "APD", "AppodealSDK"],
+      "Mopub": ["Mopub", "MoPub", "mopub"]
+    },
+    "推送与通讯": {
+      "极光推送": ["Jiguang", "JPush", "jpush", "JMessage"],
+      "个推": ["Getui", "getui", "iGeTui"],
+      "Firebase Cloud Messaging": ["FirebaseMessaging", "FCM", "firestore"],
+      "华为推送": ["HMSPush", "HuaweiPush", "hwpush"],
+      "友盟推送": ["UMPush", "UMessage", "umengpush"]
+    },
+    "统计分析": {
+      "友盟统计": ["UMAnalytics", "MobClick", "umeng", "UMConfigure"],
+      "TalkingData": ["TalkingData", "TDAnalytics", "talkingdata"],
+      "神策数据": ["SensorsAnalytics", "sensorsdata", "SensorsData"],
+      "GrowingIO": ["GrowingIO", "Growing", "growingio"],
+      "Adjust": ["Adjust", "adjust", "AdjustSDK"],
+      "AppsFlyer": ["AppsFlyer", "appsflyer", "AppsFlyerSDK"],
+      "Firebase Analytics": ["FirebaseAnalytics", "FIRAnalytics", "firebase_analytics"],
+      "Crashlytics": ["Crashlytics", "Fabric", "crashlytics"]
+    },
+    "登录与认证": {
+      "微信登录": ["WeChatAuth", "WXApi", "wechat", "weixin"],
+      "QQ登录": ["TencentOpenAPI", "QQSDK", "QQConnect"],
+      "Apple登录": ["SignInWithApple", "ASAuthorizationAppleID", "apple sign in"],
+      "微博登录": ["WeiboSDK", "sinaweibo", "WBApi"],
+      "小米登录": ["MiLogin", "xiaomi id"],
+      "华为登录": ["HiAccount", "HuaweiID", "hwid"]
+    },
+    "支付": {
+      "支付宝": ["Alipay", "AliPay", "alipay", "APPay"],
+      "微信支付": ["WechatPay", "WXPay", "wechatpay"],
+      "银联支付": ["UnionPay", "UPay", "unionpay", "ChinaPay"],
+      "Apple IAP": ["StoreKit", "InAppPurchase", "SKPayment", "iap"],
+      "PayPal": ["PayPal", "paypal"],
+      "Stripe": ["Stripe", "stripe"]
+    },
+    "地图与位置": {
+      "高德地图": ["AMap", "Autonavi", "AMapSDK", "amap"],
+      "百度地图": ["BaiduMap", "BaiduLBS", "baidu.map"],
+      "腾讯地图": ["QQMap", "TencentMap", "qq.maps"],
+      "Google Maps": ["GoogleMaps", "GMSMap", "google.maps"]
+    },
+    "即时通讯": {
+      "腾讯云IM": ["ImSDK", "TIM", "tencent.im", "imsdk"],
+      "网易云信": ["NIM", "NIMSDK", "yunxin", "nim"],
+      "融云IM": ["RongCloud", "RCIM", "rongcloud", "rongim"],
+      "环信IM": ["Hyphenate", "Easemob", "easemob", "emchat"],
+      "声网(Agora)": ["Agora", "agora", "agora.rtc", "io.agora"],
+      "极光IM": ["JMessage", "jiguang.im", "jmessage"]
+    },
+    "视频与直播": {
+      "腾讯云直播(TRTC)": ["TRTC", "trtc", "LiteAV", "liteav"],
+      "即构科技": ["Zego", "ZegoExpress", "zego", "zegocloud"],
+      "声网视频": ["agora.video"],
+      "阿里云视频": ["AliyunLive", "AliLive", "aliyun.live"],
+      "百度视频云": ["BaiduVC", "bcesdk"]
+    },
+    "图片与音视频": {
+      "阿里云OSS": ["OSS", "AliyunOSS", "oss-sdk"],
+      "七牛云": ["Qiniu", "qiniu", "qiniu-sdk"],
+      "腾讯云COS": ["COS", "Coss", "cos-sdk", "qcloud"],
+      "华为云OBS": ["OBS", "huawei.obs", "obs-sdk"]
+    },
+    "安全与风控": {
+      "腾讯乐固": ["legu", "Legu", "腾讯乐固"],
+      "阿里聚安全": ["阿里聚安全", "was", "aliyun.security"],
+      "360安全加固": ["360加固", "jiagu", "Qihoo360"]
+    },
+    "App框架": {
+      "DCloud/uni-app": ["dcloud", "uni-app", "uniCloud", "DCLOUD"],
+      "Flutter": ["Flutter", "flutter", "fluid"],
+      "React Native": ["ReactNative", "reactnative", "RNBridge"],
+      "Mvue": ["Mvue", "mvvm"]
+    }
+  },
+  "privacy_sdk_patterns": {
+    "广告与变现": {
+      "优量汇(腾讯广告)": ["GDTAD", "GDTMobSDK", "GDTSDK", "TencentAd", "qq.e.ads"],
+      "穿山甲(字节跳动)": ["Pangle", "CSJAd", "BytedanceAd"],
+      "快手广告": ["KSAd", "KuaishouAd", "KSAD"],
+      "Mintegral": ["Mintegral", "MTGSDK"],
+      "AppLovin": ["AppLovin", "MAXAds"],
+      "Google AdMob": ["GoogleMobileAds", "GADBannerView", "Admob"],
+      "IronSource": ["IronSource", "ISAd"],
+      "Unity Ads": ["UnityAds", "unity.ads"],
+      "Appodeal": ["Appodeal", "APD"]
+    },
+    "推送与通讯": {
+      "极光推送": ["Jiguang", "JPush", "jpush"],
+      "个推": ["Getui", "getui"],
+      "Firebase Cloud Messaging": ["FirebaseMessaging", "FCM"],
+      "友盟推送": ["UMPush", "UMessage"]
+    },
+    "统计分析": {
+      "友盟统计": ["UMAnalytics", "MobClick", "umeng"],
+      "TalkingData": ["TalkingData", "TDAnalytics"],
+      "神策数据": ["SensorsAnalytics", "sensorsdata"],
+      "GrowingIO": ["GrowingIO", "Growing"],
+      "Adjust": ["Adjust", "adjust"],
+      "AppsFlyer": ["AppsFlyer", "appsflyer"],
+      "Firebase Analytics": ["FirebaseAnalytics", "FIRAnalytics"],
+      "Crashlytics": ["Crashlytics", "Fabric"]
+    },
+    "登录与认证": {
+      "微信登录": ["WeChatAuth", "WXApi", "wechat"],
+      "QQ登录": ["TencentOpenAPI", "QQSDK"],
+      "Apple登录": ["SignInWithApple", "ASAuthorizationAppleID"],
+      "微博登录": ["WeiboSDK", "WBApi"],
+      "小米登录": ["MiLogin"],
+      "华为登录": ["HiAccount", "HuaweiID"]
+    },
+    "支付": {
+      "支付宝": ["Alipay", "AliPay", "alipay"],
+      "微信支付": ["WechatPay", "WXPay"],
+      "Apple IAP": ["StoreKit", "InAppPurchase", "SKPayment"]
+    },
+    "设备标识": {
+      "移动安全联盟OAID": ["oaid", "OAID", "msa"],
+      "极光ID": ["jiguang.id", "jpushid"]
+    },
+    "地图与位置": {
+      "高德地图": ["AMap", "Autonavi", "AMapSDK"],
+      "百度地图": ["BaiduMap", "BaiduLBS"],
+      "腾讯地图": ["QQMap", "TencentMap"],
+      "Google Maps": ["GoogleMaps", "GMSMap"]
+    },
+    "即时通讯": {
+      "腾讯云IM": ["ImSDK", "TIM", "tencent.im"],
+      "网易云信": ["NIM", "yunxin", "nim"],
+      "融云IM": ["RongCloud", "RCIM", "rongcloud"],
+      "环信IM": ["Hyphenate", "Easemob"],
+      "声网(Agora)": ["Agora", "agora", "agora.rtc"],
+      "极光IM": ["JMessage", "jiguang.im"]
+    },
+    "视频与直播": {
+      "腾讯云直播(TRTC)": ["TRTC", "trtc", "LiteAV"],
+      "即构科技": ["Zego", "ZegoExpress", "zego"],
+      "声网视频": ["agora.video"],
+      "阿里云视频": ["AliyunLive", "AliLive"]
+    },
+    "图片与存储": {
+      "阿里云OSS": ["OSS", "AliyunOSS", "oss-sdk"],
+      "七牛云": ["Qiniu", "qiniu"],
+      "腾讯云COS": ["COS", "cos-sdk", "qcloud"]
+    }
+  },
+  "open_source_sdk_patterns": {
+    "图片加载": {
+      "SDWebImage": ["SDWebImage", "sdwebimage", "UIImageView+WebCache"],
+      "Kingfisher": ["Kingfisher", "kingfisher", "kf"],
+      "Glide": ["Glide", "glide", "GlideImageView"],
+      "AlamofireImage": ["AlamofireImage", "af.image"],
+      "PINRemoteImage": ["PINRemoteImage", "pinremoteimage"]
+    },
+    "网络请求": {
+      "AFNetworking": ["AFNetworking", "afnetworking", "AFHTTPSessionManager"],
+      "Alamofire": ["Alamofire", "alamofire", "af"],
+      "SocketRocket": ["SocketRocket", "socketrocket", "SRWebSocket"],
+      "Starscream": ["Starscream", "starscream"]
+    },
+    "JSON解析": {
+      "SwiftyJSON": ["SwiftyJSON", "swiftyjson", "JSON"],
+      "ObjectMapper": ["ObjectMapper", "objectmapper", "Mappable"],
+      "Codable": ["Codable", "Decodable", "Encodable"]
+    },
+    "响应式编程": {
+      "RxSwift": ["RxSwift", "rxswift", "RxCocoa", "rx"],
+      "Combine": ["Combine", "combine", " Publishers", " Subscribers"]
+    },
+    "数据库": {
+      "SQLite.swift": ["SQLite", "sqlite", "Statement"],
+      "Realm": ["Realm", "realm", "RLMObject"],
+      "FMDB": ["FMDB", "fmdb", "FMDatabase"],
+      "GRDB": ["GRDB", "grdb", "DatabaseQueue"]
+    },
+    "日志": {
+      "CocoaLumberjack": ["CocoaLumberjack", "lumberjack", "DDLog"],
+      "Log": ["Log", "logger", "Logger"]
+    },
+    "UI组件": {
+      "SnapKit": ["SnapKit", "snapkit", "snp"],
+      "Masonry": ["Masonry", "masonry", "mas"],
+      "SkeletonView": ["SkeletonView", "skeletonview"],
+      "lottie-ios": ["Lottie", "lottie", "animation"]
+    },
+    "App框架": {
+      "DCloud/uni-app": ["dcloud", "uni-app", "DCLOUD"],
+      "Flutter": ["Flutter", "flutter"]
+    }
+  },
+  "exclude_prefixes": [
+    "com.apple",
+    "apple.",
+    "system",
+    "libobjc",
+    "libSystem",
+    "CoreFoundation",
+    "Foundation",
+    "UIKit",
+    "Swift",
+    "ObjectiveC",
+    "Darwin",
+    "mach",
+    "dispatch",
+    "os",
+    "swift."
+  ],
+  "privacy_keywords": [
+    "analytics", "tracking", "ads", "advertising",
+    "push", "message", "im", "chat",
+    "location", "map", "gps",
+    "social", "share", "login", "auth",
+    "payment", "purchase", "wallet",
+    "idfa", "oaid", "device.id"
+  ]
+}

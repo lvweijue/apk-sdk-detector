@@ -1,0 +1,564 @@
+{
+  "manifest_patterns": {
+    "广告与变现": {
+      "优量汇(腾讯广告)": [
+        "com.qq.e.ads", "GDTAuthorizeActivity", "GDTFileProvider",
+        "GDTMobSDK", "GDTDownloadService", "GDTNativeExpress"
+      ],
+      "穿山甲(字节跳动)": [
+        "com.bytedance.sdk.openadsdk", "TTAdSdk", "Pangle",
+        "TTDownloadService", "CSJDownload", "TTFullScreenVideoAd"
+      ],
+      "快手广告联盟": [
+        "com.kuaishou.ksad", "KSAdActivity", "KSDownloadService",
+        "com.moat.sdk", "MoatAd", "ksad"
+      ],
+      "Sigmob": [
+        "com.sigmob.sdk", "SigmobAd", "SigmobDownload",
+        "com.sigmob", "WindSDK", "SigmobFileProvider"
+      ],
+      "ToBid": ["com.tobid.sdk", "ToBidSDK", "ToBidActivity", "tobid"],
+      "Mintegral": ["com.mintegral", "MintegralSDK", "MintegralActivity", "MintegralAd", "MTGSDK"],
+      "AppLovin": ["com.applovin", "AppLovinSdk", "MaxAds", "AppLovinActivity", "applovin", "ALSdk"],
+      "AdMob/Google Ads": ["com.google.android.gms.ads", "GoogleMobileAds", "AdMobActivity", "MobileAds", "Admob"],
+      "美数广告": ["com.meishu", "MeiShuAd", "AdInsight", "meishu"],
+      "鲸鸿动能(华为)": ["com.huawei.hms.ads", "HwAds", "HuaweiAds", "hwid", "HwriadActivity", "HuaweiAdsSDK"],
+      "Taku广告": ["com.taku", "TakuSDK", "taku"],
+      "旺脉广告": ["com.wangmai", "WangMaiAd", "wangmai"],
+      "趣盟SDK": ["com.qumeng", "QuMengSDK", "qumeng"],
+      "Octopus广告": ["com.octopus.ad", "OctopusAd", "OctopusProvider", "octopus"],
+      "HX广告": ["com.hxad", "HXSDK", "hxad"],
+      "Menta广告": ["com.menta", "MentaSDK", "menta"],
+      "聚推SDK": ["com.jutui", "JuTuiSDK", "jutui"]
+    },
+    "推送与通讯": {
+      "极光推送": ["cn.jiguang", "JPush", "JiguangService", "JiguangReceiver", "jpush", "igexin"],
+      "个推": ["com.getui", "GetuiSdk", "GetuiService", "GetuiReceiver", "getui", "igexin"],
+      "Firebase Cloud Messaging": ["com.google.firebase.messaging", "FirebaseMessagingService", "FirebaseMessaging"],
+      "华为推送": ["com.huawei.hms.push", "HwPush", "HuaweiPushKit", "hwpush", "HMSPush"],
+      "小米推送": ["com.xiaomi.mipush", "MiPush", "XMPushService", "mipush", "MiPushClient"],
+      "OPPO推送": ["com.heytap.mcss", "OppoPush", "HeytapPush", "heytap", "OPPO Push"],
+      "VIVO推送": ["com.vivo.push", "VivoPush", "vivo.push"],
+      "魅族推送": ["com.meizu", "MeizuPush", "FlymePush", "mzpush", "MeizuFlyme"],
+      "荣耀推送": ["com.hihonor", "HonorPush", "hihonor"]
+    },
+    "统计分析": {
+      "友盟统计": ["com.umeng.analytics", "UMAnalytics", "MobClickAgent", "umeng"],
+      "TalkingData": ["com.talkingdata", "TDAnalytics", "TalkingDataSDK", "talkingdata"],
+      "百度移动统计": ["com.baidu.mobstat", "BaiduMobStat", "MobClickAgent", "mobstat"],
+      "神策数据": ["com.sensorsdata", "SensorsAnalytics", "SensorsDataAPI", "sensorsdata"],
+      "GrowingIO": ["com.growingio", "GrowingIO", "GIOAnalytics", "growingio"],
+      "Adjust": ["com.adjust", "AdjustSDK", "Adjust", "adjustsdk"],
+      "AppsFlyer": ["com.appsflyer", "AppsFlyerLib", "AppsFlyer", "appsflyer"]
+    },
+    "登录与认证": {
+      "移动一键登录": ["cmpassport", "CmccAuth", "ChinaMobileSSO", "cmcc", "移动一键登录"],
+      "电信天翼登录": ["ctc", "TianYiAuth", "ChinaTelecomSSO", "tianyi", "天翼"],
+      "联通登录": ["chinaunicom", "UnicomAuth", "ChinaUnicomSSO", "unicom", "联通"],
+      "华为账号": ["com.huawei.hms.account", "HiAccount", "HuaweiID", "hwid", "huaweiid"],
+      "华为AGC认证": ["com.huawei.agc", "AGC", "AppGalleryConnect", "agc", "AGCAuth"],
+      "联想统一认证": ["com.lenovo", "LenovoSSO", "LejiAccount", "lenovo", "联想"]
+    },
+    "支付": {
+      "支付宝": ["com.alipay", "AlipaySDK", "AliPay", "AlipayGphone", "alipay"],
+      "微信支付": ["com.tencent.mm", "WXPayEntry", "WeChatPay", "wechatpay", "wxpay"],
+      "银联支付": ["com.unionpay", "UnionPay", "UPay", "unionpay", "upay"],
+      "度小满支付": ["com.baidu.duer", "DuXiaoMan", "BaiduPay", "duxiaoman", "baiduwallet"],
+      "QQ钱包": ["com.tencent.qwallet", "QQWallet", "qwallet"],
+      "抖音支付": ["com.ss.android.ugc.pay", "bytedance.pay", "douyin.pay", "sss.pay"],
+      "小米支付": ["com.xiaomi.payment", "xiaomi.pay", "mipay"]
+    },
+    "设备标识": {
+      "OAID(移动安全联盟)": ["com.bun.miitmdid", "MSA", "OaidClient", "miitmdid", "msa", "oaid"]
+    },
+    "安全与风控": {
+      "百度安全": ["com.baidusec", "BaiduSec", "baidusec"],
+      "腾讯图灵盾": ["com.tencent.turing", "TuringGuard", "TuringAuth", "turingguard", "qrazr"],
+      "网易易盾": ["com.netease.emsec", "YeDun", "NetEaseSecurity", "emsec", "yundun"],
+      "腾讯人脸核身": ["com.tencent faceverify", "facecheck", "tencent face"],
+      "卫士通加密": ["com.wangsafenet", "wstx", "wangsafe"]
+    },
+    "即时通讯": {
+      "腾讯云IM": ["com.tencent.imsdk", "TIM", "IMSdk", "imsdk", "tencent.imsdk"],
+      "网易云信": ["com.netease.nim", "NIM", "yunxin", "nim", "netease.im"],
+      "融云IM": ["io.rong", "RongCloud", "RCIM", "rongcloud", "rongim"],
+      "环信IM": ["com.easemob", "Hyphenate", "EMClient", "easemob", "hyphenate"],
+      "声网(Agora)": ["io.agora", "AgoraSDK", "AgoraRtcEngine", "agora", "agora.rtc"]
+    },
+    "视频与直播": {
+      "腾讯云直播(TRTC)": ["com.tencent.trtc", "TRTC", "LiteAV", "liteav", "trtc", "tencent.trtc"],
+      "即构科技": ["com.zego", "ZegoExpress", "ZegoSDK", "zego", "zegocloud"]
+    },
+    "电商与生活服务": {
+      "淘宝OpenSDK": ["com.taobao", "taobao", "tb.open"],
+      "阿里百川": ["com.alibaba.baichuan", "baichuan", "aliopen"],
+      "京东SDK": ["com.jingdong", "jd.", "jdpay"],
+      "拼多多SDK": ["com.xunmeng", "pinduoduo", "pdd"]
+    }
+  },
+  "method_signatures": {
+    "广告与变现": {
+      "优量汇(腾讯广告)": [
+        "GDTMobSDK.init", "GDTAdnative.load", "GDTRewardVideoAd.load",
+        "com.qq.e.ads.GDTNativeExpress", "com.qq.e.comm.DownloadService"
+      ],
+      "穿山甲(字节跳动)": [
+        "TTAdSdk.init", "TTNativeExpressAd.load", "PangleAd.load",
+        "com.bytedance.sdk.openadsdk.TTAppDownloadListener"
+      ],
+      "快手广告联盟": ["ksad.init", "KSAd.load", "com.kwai.container.AdService"],
+      "Sigmob": ["com.sigmob.sdk.WindSDK", "com.sigmob.sdk.AdManager.init"],
+      "ToBid": ["com.tobid.sdk.ToBidSDK.init", "ToBid.loadAd"],
+      "Mintegral": ["MintegralSDK.init", "com.mintegral.MTGAd.load"],
+      "AppLovin": ["AppLovinSdk.init", "MaxAds.load", "com.applovin.ad.AppLovinInterstitialAd"],
+      "AdMob/Google Ads": [
+        "com.google.android.gms.ads.MobileAds.init", "AdMob.init",
+        "com.google.android.gms.ads.identifier.AdvertisingIdClient"
+      ],
+      "美数广告": ["com.meishu.sdk.MeishuAd.init"],
+      "鲸鸿动能(华为)": ["HwAds.init", "com.huawei.hms.ads.IdentifierAdapter"],
+      "Fancy广告": ["com.fancyad.sdk.init"],
+      "奇运广告": ["com.qiyun.sdk.init"],
+      "Taku广告": ["com.taku.sdk.init"],
+      "旺脉广告": ["com.wangmai.sdk.init"],
+      "趣盟SDK": ["com.qumeng.sdk.init"],
+      "米盟广告": ["com.mimob.sdk.init"],
+      "Octopus广告": ["com.octopus.ad.init"],
+      "HX广告": ["com.hx.sdk.init"],
+      "Menta广告": ["com.menta.sdk.init"],
+      "聚推SDK": ["com.jutui.sdk.init"],
+      "AdScope": ["com.adscope.sdk.init"],
+      "Unity Ads": ["UnityAds.initialize", "com.unity3d.ads.UnityAds"],
+      "Facebook Ads": ["AudienceNetworkAds.init", "com.facebook.ads.InterstitialAd"]
+    },
+    "推送与通讯": {
+      "极光推送": ["cn.jiguang.JPush.init", "cn.jpush.android.JPush", "com.igexin.sdk.PushManager"],
+      "个推": ["com.getui.sdk.PushManager", "GetuiSdk.startService"],
+      "Firebase Cloud Messaging": ["FirebaseMessaging.getInstance", "com.google.firebase.messaging.FirebaseMessagingService"],
+      "华为推送": ["HwPushManager.init", "com.huawei.hms.push.HuaweiPush"],
+      "小米推送": ["MiPushClient.register", "com.xiaomi.mipush.MiPushMessage"],
+      "OPPO推送": ["PushManager.init", "com.heytap.mcss.PushManager"],
+      "VIVO推送": ["VivoPush.init", "com.vivo.push.PushClient"],
+      "魅族推送": ["PushManager.init", "com.meizu.cloud.push"],
+      "荣耀推送": ["HonorPush.init", "com.hihonor.push.HonorPush"]
+    },
+    "统计分析": {
+      "友盟统计": ["MobclickAgent.init", "com.umeng.analytics.MobclickAgent"],
+      "TalkingData": ["TDAnalytics.init", "com.talkingdata.analytics.TDAPI"],
+      "百度移动统计": ["BaiduMobStat.init", "com.baidu.mobstat.BaiduMobStat"],
+      "神策数据": ["SensorsAnalytics.init", "com.sensorsdata.analytics.SensorsDataAPI"],
+      "GrowingIO": ["GrowingIO.init", "com.growingio.GrowingIO"],
+      "Adjust": ["Adjust.init", "com.adjust.sdk.Adjust"],
+      "AppsFlyer": ["AppsFlyerLib.init", "com.appsflyer.AppsFlyerLib"]
+    },
+    "登录与认证": {
+      "移动一键登录": ["CMPassport.init", "com.cmic.ssogw.SSO"],
+      "电信天翼登录": ["TianYiAuth.init", "ctc.ctauth"],
+      "联通登录": ["UnicomAuth.init", "com.unicom.dc.auth"],
+      "华为账号": ["HiAccount.init", "com.huawei.hms.account.AccountManager"],
+      "华为AGC认证": ["AGC.init", "com.huawei.agc.auth.AGCAuth"]
+    },
+    "支付": {
+      "支付宝": ["Alipay.init", "com.alipay.sdk.PayTask"],
+      "微信支付": ["WXPay.init", "com.tencent.mm.opensdk.modelpay.WXPay"]
+    },
+    "设备标识": {
+      "OAID(移动安全联盟)": ["MSA.init", "OaidClient.getOaid", "com.bun.miitmdid.MsaIdClient"]
+    },
+    "安全与风控": {
+      "百度安全": ["BaiduSec.init", "com.baidusec.BDSec"],
+      "腾讯图灵盾": ["TuringGuard.init", "com.tencent.turing.TuringGuard"],
+      "网易易盾": ["YunDun.init", "com.netease.emsec.YunDun"]
+    },
+    "即时通讯": {
+      "腾讯云IM": ["TIMManager.init", "com.tencent.imsdk.TIMManager"],
+      "网易云信": ["NIM.init", "com.netease.nim.avchatkit.AVChatKit"],
+      "融云IM": ["RongIM.init", "io.rong.imkit.RongIM"],
+      "环信IM": ["EMClient.init", "com.easemob.chatuidemo.HyphenateHelper"],
+      "声网(Agora)": ["AgoraRtcEngine.configVideo", "io.agora.rtc.AgoraRtcEngine"]
+    },
+    "视频与直播": {
+      "腾讯云直播(TRTC)": ["TRTCCloud.init", "com.tencent.trtc.TRTCCloud"],
+      "即构科技": ["ZegoExpressEngine.init", "com.zego.zego_express_engine.ZegoExpressEngine"]
+    }
+  },
+  "url_patterns": {
+    "极光推送": ["jiguang", "jpush", "igexin", "engagelab"],
+    "个推": ["getui", "igexin"],
+    "友盟": ["umeng", "umengcloud"],
+    "腾讯广告": ["qq.com", "adnet", "gdt", "mingdian"],
+    "穿山甲": ["bytedance", "pangle", "csj"],
+    "百度广告": ["baidu.com", "mobads"],
+    "百度统计": ["baidu.com", "mobstat"],
+    "百度地图": ["map.baidu", "api.map"],
+    "高德地图": ["autonavi", "gaode"],
+    "微信SDK": ["weixin", "wechat", "wx"],
+    "支付宝": ["alipay", "alipay.com"],
+    "七牛云": ["qiniu", "qiniucloud"],
+    "阿里云": ["aliyun", "aliyuncs"],
+    "腾讯云": ["tencent", "qcloud", "yun"],
+    "声网": ["agora", "agoraio"],
+    "即构": ["zego", "zegocloud"],
+    "Bugly": ["bugly", "tencent"],
+    "华为": ["huawei", "hwid"],
+    "小米": ["xiaomi", "miui"],
+    "OPPO": ["oppo", "heytap"],
+    "vivo": ["vivo"],
+    "魅族": ["meizu", "flyme"]
+  },
+  "privacy_sdk_patterns": {
+    "推送与通讯": {
+      "个推": ["com.getui", "cn.getui", "igexin"],
+      "极光推送": ["cn.jiguang", "JPush"],
+      "友盟推送": ["com.umeng.umsdk.msg", "com.umeng.umsdk.push", "com.umeng.push"],
+      "友盟消息推送SDK": ["cn.com.xy", "xy.mobile"],
+      "华为Push Kit": ["com.huawei.android.push", "huawei.push", "com.huawei.hms.push"],
+      "荣耀Push": ["com.hihonor.push", "honor.push", "hihonor.pushservice"],
+      "小米推送": ["com.xiaomi.push", "xiaomi", "xmisp"],
+      "华为推送": ["com.huawei.android.push", "huawei.push", "com.huawei.hms"],
+      "OPPO推送": ["com.heytap.mcss", "oppo.push", "com.heytap.oaid"],
+      "VIVO推送": ["com.vivo.push", "vivo.push", "com.vivo."],
+      "百度云推送": ["com.baidu.push", "baidu.pushservice", "baidu.android.push"],
+      "Firebase Cloud Messaging": ["com.google.firebase.messaging", "fcm"],
+      "腾讯信鸽": ["com.tencent.android.tpush", "com.tencent.mid"],
+      "网易云信": ["com.netease.nim", "im.netease", "yunxin."],
+      "融云": ["io.rong", "rongcloud"],
+      "环信": ["com.easemob", "hyphenate"],
+      "LeanCloud": ["com.avos", "leancloud"],
+      "MobPush": ["com.mob", "mob.push"],
+      "OneSignal": ["com.onesignal", "onesignal"],
+      "声网(Agora)": ["io.agora", "agora", "com.ryan.ak", "agora."]
+    },
+    "广告与变现": {
+      "优量汇(腾讯广告)": ["com.qq.e", "gdt.ads", "minisdk", "qq.e."],
+      "AdScope": ["com.adscope", "adscope", "ascope"],
+      "百度移动广告": ["com.baidu.mobads", "mobads"],
+      "穿山甲(字节跳动)": ["com.bytedance", "pangle", "ttad", "csj", "bytedance."],
+      "快手联盟": ["com.kuaishou", "ksad", "kwad", "ks.Ad", "com.kwad."],
+      "美数广告": ["com.meishu", "meishu.", "adinsight"],
+      "领页广告": ["com.lingye", "lingye", "adlingye"],
+      "奇运广告": ["com.qiyun", "qiyun."],
+      "Fancy广告": ["com.fancy", "fancyad"],
+      "鲸鸿动能(华为)": ["com.huawei.hms.ads", "hwid.", "huawei.ads"],
+      "Taku广告": ["com.taku", "taku.sdk"],
+      "旺脉广告": ["com.wangmai", "wangmai", "adwm"],
+      "孛樊SDK": ["com.beifan", "befan", "bifan"],
+      "趣盟SDK": ["com.qumeng", "qumeng", "quming"],
+      "米盟广告": ["com.mimob", "mimob", "mimon"],
+      "Octopus广告": ["com.octopus", "octopus."],
+      "HX广告": ["com.hxad", "hx.ad", "hxsdk"],
+      "Menta广告": ["com.menta", "menta."],
+      "ToBid": ["com.tobid", "tobid"],
+      "Sigmob": ["com.sigmob", "sigmob", "wind"],
+      "聚推SDK": ["com.jutui", "jutui."],
+      "AdMob/Google Ads": ["com.google.android.gms.ads", "admob", "gads"],
+      "Mintegral": ["com.mintegral", "mintegral"],
+      "AppLovin": ["com.applovin", "applovin", "MaxAds"],
+      "Facebook Ads": ["com.facebook.ads", "audiencenetwork"],
+      "Unity Ads": ["com.unity3d.ads", "unity.ads"],
+      "小米游戏联运SDK": ["com.xiaomi.game", "mi.game", "xiaomi.gamecenter"],
+      "穿山甲(字节穿山甲)": ["com.bytedance.sdk", "bytedance.sdk", "pangle"],
+      "今日头条SDK": ["com.bytedance.news", "toutiao"]
+    },
+    "统计分析": {
+      "友盟统计": ["com.umeng.umsdk.analytics", "com.umeng.analytics", "umeng.analytics"],
+      "TalkingData": ["com.talkingdata", "TalkingData"],
+      "Google Analytics": ["com.google.android.gms.analytics"],
+      "Flurry": ["com.flurry", "flurry"],
+      "Firebase Analytics": ["com.google.firebase.analytics"],
+      "Mixpanel": ["com.mixpanel", "mixpanel"],
+      "Amplitude": ["com.amplitude", "amplitude"],
+      "Adjust": ["com.adjust", "adjust.sdk"],
+      "AppsFlyer": ["com.appsflyer", "appsflyer"],
+      "Fabric/Crashlytics": ["io.fabric", "com.crashlytics"],
+      "腾讯移动分析(MTA)": ["com.tencent.stat", "mta"],
+      "腾讯浏览服务SDK": ["com.tencent.tbs", "tbs", "tencent.tbs"],
+      "腾讯X5内核": ["com.tencent.smtt", "x5", "QQX5"],
+      "百度移动统计": ["com.baidu.mobstat", "baidu.mobstat", "MobClickAgent"],
+      "神策数据": ["com.sensorsdata", "sensorsanalytics"],
+      "GrowingIO": ["com.growingio", "growingio"],
+      "热云数据": ["hotcloud", "trackingIO"],
+      "秒针系统": ["miaozhen"],
+      "国双数据": ["gridsum", "gsdata"]
+    },
+    "地图与位置": {
+      "高德地图": ["com.amap", "autonavi", "map.browse", "com.loc", "com.autonavi"],
+      "腾讯地图": ["com.tencent.map", "qq.maps", "qq.map", "TencentMap"],
+      "百度地图/定位": ["com.baidu.lbsapi", "lbsapi", "BaiduLocation", "baidu.location", "baidumaps"],
+      "Google Maps": ["com.google.android.gms.maps", "googlemaps"],
+      "百度导航SDK": ["com.baidu.nav", "bdnavi", "navi.baidu"]
+    },
+    "支付": {
+      "支付宝": ["com.alipay", "alipay", "AlipayGphone"],
+      "微信支付": ["com.tencent.mm", "wxapi", "wechat"],
+      "银联支付": ["com.unionpay", "upay", "unionpay"],
+      "度小满支付": ["com.baidu.duer", "duxiaoman", "baidu.wallet"],
+      "QQ钱包": ["com.tencent.qwallet", "qwallet"],
+      "抖音支付": ["com.ss.android", "douyin.pay", "sss.pay"],
+      "Stripe": ["com.stripe", "stripe"],
+      "PayPal": ["com.paypal", "paypal"],
+      "Google Pay": ["com.google.android.gms", "gpay"]
+    },
+    "登录与认证": {
+      "百度OAuth": ["com.baidu.oauth", "BaiduAccount", "baidu.sso"],
+      "微信登录": ["com.tencent.mm", "wechat.login"],
+      "QQ登录": ["com.tencent.connect", "opensdk", "tencent.login"],
+      "微博登录": ["com.sina.weibo", "weibo.login"],
+      "Firebase Auth": ["com.google.firebase.auth"],
+      "华为账号": ["com.huawei.hms.account", "huaweiid", "hwid."],
+      "华为AGC认证": ["com.huawei.agc", "agc"],
+      "移动一键登录": ["com.cmic", "cmcc.", "chinamobile", "ophone", "cmpassport"],
+      "电信天翼登录": ["com.ctc", "ctc.", "ctnet", "tianyi", "ctcc."],
+      "联通登录": ["com.unicom", "chinaunicom", "cuui", "cu.com"],
+      "荣耀登录": ["com.hihonor", "honor.", "hihonor.account"],
+      "华为安全检测SDK": ["com.huawei.hms.protects", "hms.protect", "huawei.protect"],
+      "华为情景感知SDK": ["com.huawei.hms.location.activity", "hiactivity", "huawei Awareness"],
+      "华为NetworkSDK": ["com.huawei.hianalytics", "hianalytics", "huawei.analytics"],
+      "荣耀PUSH SDK": ["com.hihonor.push", "honor.push", "hihonor.push"],
+      "抖音登录": ["com.ss.android", "douyin.sso"],
+      "联想统一认证": ["com.lenovo", "lenovo.", "leji"],
+      "抖音开放平台SDK": ["com.ss.android.ugc", "douyin.open", "bytedesk"]
+    },
+    "社交与分享": {
+      "微信SDK/分享": ["com.tencent.mm", "weixin", "wechat"],
+      "QQ SDK": ["com.tencent.mobileqq", "mqq", "tencent.login"],
+      "微博SDK": ["com.sina.weibo", "sina.sdk", "weibo"],
+      "ShareSDK": ["com.mob", "sharesdk", "mob.share", "cn.sharesdk"],
+      "钉钉SDK": ["com.alibaba.android.rim", "dingtalk"]
+    },
+    "设备标识": {
+      "OAID(移动安全联盟)": ["com.bun.miitmdid", "com.mdid.msa", "miitdid", "oaid"],
+      "友盟设备标识": ["com.umeng.umsdk"],
+      "腾讯UnloadPay": ["qtauth"],
+      "网易易盾": ["dun.163", "com.netease.nis", "netease.emsec"]
+    },
+    "云服务与存储": {
+      "阿里云OSS": ["com.aliyun", "oss-android", "aliyun."],
+      "阿里云实人认证": ["com.aliyun.faceverify", "aliyunFaceVerify", "faceverify.aliyun"],
+      "阿里百川电商SDK": ["com.alibaba.beacon", "baichuan", "taobao"],
+      "腾讯云COS": ["com.tencent.cos", "cos.xml", "cos."],
+      "七牛云存储": ["com.qiniu", "qiniu.storage"],
+      "AWS S3": ["com.amazonaws", "aws-android"]
+    },
+    "即时通讯": {
+      "腾讯云IM": ["com.tencent.imsdk", "imsdk."],
+      "网易云信": ["com.netease.nim.", "im.netease.", "yunxin.", "com.netease.emedia.", "emedia."],
+      "融云IM": ["io.rong.", "rongcloud.im."],
+      "环信IM": ["com.easemob.", "hyphenate.im."],
+      "声网(Agora)": ["io.agora.", "agora.", "com.ryan.ak"]
+    },
+    "视频与直播": {
+      "腾讯视频云": ["video.qcloud.com", "liteav", "trtc"],
+      "B站SDK": ["com.bilibili", "bilibili"],
+      "腾讯云直播(TRTC)": ["live.tencent", "trtc", "im_trtc"],
+      "即构科技": ["com.zego", "zego"],
+      "阿里云视频点播": ["com.aliyun.vod", "aliyun.vod", "vod.aliyun"],
+      "Unity Live": ["unity.live"],
+      "百度实时音视频": ["com.baidu.rtc", "baidu.rtc", "baidurtc"],
+      "乐播投屏SDK": ["com.hpplay", "lebo", "hpplay", "letvcast"]
+    },
+    "安全与风控": {
+      "百度安全SDK": ["com.baidusec", "baidusec", "bda.", "baidu.sec"],
+      "腾讯图灵盾": ["com.tencent.turing", "qrazr", "turing"],
+      "梆梆安全": ["com.bangcle", "bangcle"],
+      "爱加密": ["com.ijiami", "ijiami"],
+      "网易易盾安全": ["dun.163", "emsecurity"],
+      "电子证件安全认证SDK": ["com.jinlintong", "jlt.", "goldlink"]
+    }
+  },
+  "sdk_patterns": {
+    "图片与处理": {
+      "Fresco": ["com.facebook.fresco", "fresco.imagepipeline"],
+      "Glide": ["com.bumptech.glide", "com.github.bumptech.glide"],
+      "Picasso": ["com.squareup.picasso", "picasso"]
+    },
+    "网络与异步": {
+      "OkHttp": ["com.squareup.okhttp", "okhttp3"],
+      "Retrofit": ["com.squareup.retrofit", "retrofit2"],
+      "Volley": ["com.android.volley"],
+      "RxJava": ["io.reactivex", "rxjava"],
+      "Kotlin Coroutines": ["kotlinx.coroutines"],
+      "Okio": ["okio"]
+    },
+    "数据库": {
+      "GreenDAO": ["org.greenrobot.greendao"],
+      "Room": ["androidx.room", "room"],
+      "Realm": ["io.realm", "realm"]
+    },
+    "热更新": {
+      "Tinker": ["com.tencent.tinker", "tinker"],
+      "Robust(美团)": ["com.meituan", "robust"],
+      "AndFix": ["com.alipay.euler", "andfix"]
+    },
+    "UI组件": {
+      "Material Design": ["com.google.android.material"],
+      "Lottie": ["com.airbnb.android.lottie", "lottie"]
+    },
+    "跨平台框架": {
+      "DCloud/uni-app": ["io.dcloud.HBuilder"],
+      "Weex": ["com.taobao.weex."],
+      "Flutter": ["io.flutter"],
+      "React Native": ["com.facebook.react"]
+    },
+    "权限管理": {
+      "AndPermission": ["com.yanzhenjie.permission"]
+    },
+    "二维码": {
+      "ZXing": ["com.google.zxing", "zxing"]
+    },
+    "媒体播放": {
+      "SVGAPlayer": ["com.opensvgasp", "svgasp"]
+    },
+    "压缩与加密": {
+      "Apache Commons Compress": ["org.apache.commons.compress", "commons-compress"],
+      "BouncyCastle": ["org.bouncycastle", "bouncycastle"]
+    }
+  },
+  "uncertain_sdk_patterns": {
+    "uni-app广告适配": {
+      "DCloud广告适配(穿山甲)": ["io.dcloud.sdk.poly.adapter.csj"],
+      "DCloud广告适配(快手)": ["io.dcloud.sdk.poly.adapter.ks"],
+      "DCloud广告适配(优量汇)": ["io.dcloud.sdk.poly.adapter.gdt"]
+    },
+    "地图SDK(可能是常量)": {
+      "高德地图API_KEY": ["com.amap.api.v2.apikey"],
+      "百度地图API_KEY": ["com.baidu.lbsapi.API_KEY"]
+    },
+    "设备标识(可能是框架自带)": {
+      "OAID(uni-app基础包)": ["com.bun.miitmdid", "com.mdid.msa"]
+    },
+    "厂商ROM兼容(可能是系统级)": {
+      "魅族安全兼容": ["com.meizu.safe"],
+      "荣耀Launcher兼容": ["com.hihonor.android.launcher"],
+      "360市场兼容": ["com.qihoo.appstore"],
+      "荣耀设置兼容": ["com.hihonor.android.launcher.settings"]
+    },
+    "误判为FacebookSDK": {
+      "Fresco图片库(不是Facebook登录)": ["com.facebook.fresco", "com.facebook.animated"]
+    }
+  },
+  "open_source_sdk_patterns": {
+    "网络通信": {
+      "OkHttp": ["com.squareup.okhttp", "okhttp3", "okhttp"],
+      "Okio": ["com.squareup.okio", "okio"],
+      "Retrofit": ["com.squareup.retrofit", "retrofit2"],
+      "Volley": ["com.android.volley"],
+      "AsyncHttpClient": ["com.loopj.android.http", "async.http"],
+      "Apache HttpClient": ["org.apache.http", "apache.http"]
+    },
+    "图片加载与处理": {
+      "Glide": ["com.bumptech.glide", "bumptech.glide"],
+      "Fresco": ["com.facebook.fresco", "fresco"],
+      "Picasso": ["com.squareup.picasso", "picasso"],
+      "Coil": ["io.coil", "coil"],
+      "ImageLoader": ["com.nostra13.universalimageloader"]
+    },
+    "响应式编程": {
+      "RxJava": ["io.reactivex", "rxjava"],
+      "RxAndroid": ["io.reactivex.rxjava3.android", "rxandroid"],
+      "RxJavaFX": ["rxjavafx"]
+    },
+    "JSON解析": {
+      "FastJSON": ["com.alibaba.fastjson"],
+      "Gson": ["com.google.gson", "google.gson"],
+      "Jackson": ["com.fasterxml.jackson"],
+      "Moshi": ["com.squareup.moshi"]
+    },
+    "数据库": {
+      "GreenDAO": ["org.greenrobot.greendao"],
+      "Room": ["androidx.room"],
+      "Realm": ["io.realm"],
+      "WCDB(微信开源)": ["com.tencent.wcdb", "wcdb"],
+      "MMKV(微信开源)": ["com.tencent.mmkv", "mmkv"],
+      "SQLCipher": ["net.sqlcipher"]
+    },
+    "UI与动画": {
+      "Lottie": ["com.airbnb.android.lottie", "com.airbnb.lottie"],
+      "SVGAPlayer": ["com.opensource.svgaplayer", "svgaplayer"],
+      "BaseRecyclerViewAdapterHelper": ["com.chad.library"],
+      "SmartRefreshLayout": ["com.scwang.smartrefresh"],
+      "Material Components": ["com.google.android.material"]
+    },
+    "跨平台框架": {
+      "React Native": ["com.facebook.react", "facebook.react"],
+      "Flutter": ["io.flutter"],
+      "Weex": ["org.apache.weex", "com.taobao.weex"],
+      "Cordova": ["org.apache.cordova"]
+    },
+    "热修复与加固": {
+      "Tinker(微信开源)": ["com.tencent.tinker", "tinker.loader"],
+      "Robust(美团开源)": ["com.meituan.robust"],
+      "Sophix(阿里开源)": ["com.taobao.sophix"],
+      "AndFix(阿里开源)": ["com.alipay.euler", "andfix"]
+    },
+    "权限管理": {
+      "AndPermission": ["com.yanzhenjie.permission"],
+      "XXPermissions": ["com.hjq.permissions", "xxpermissions"]
+    },
+    "二维码": {
+      "ZXing": ["com.google.zxing"],
+      "ZXingLite": ["com.king.zxing"],
+      "BGAQRCode": ["cn.bingoogolapple.qrcode"]
+    },
+    "依赖注入": {
+      "Dagger2": ["dagger"],
+      "ButterKnife": ["butterknife"],
+      "Hilt": ["dagger.hilt"]
+    },
+    "事件总线": {
+      "EventBus": ["org.greenrobot.eventbus"],
+      "RxPermissions": ["com.tbruyelle.rxpermissions"]
+    },
+    "日志与调试": {
+      "Logger": ["com.orhanobut.logger"],
+      "Timber": ["timber.log"]
+    },
+    "压缩与加密": {
+      "Apache Commons Compress": ["org.apache.commons.compress"],
+      "BouncyCastle": ["org.bouncycastle"],
+      "Zip4j": ["net.lingala.zip4j"]
+    },
+    "其他常用开源库": {
+      "Apache Commons系列": ["org.apache.commons"],
+      "Guava(谷歌)": ["com.google.guava"],
+      "Protocol Buffers": ["com.google.protobuf"],
+      "DexGuard/ProGuard": ["proguard"],
+      "LeakCanary": ["com.squareup.leakcanary", "leakcanary"],
+      "BlockCanary": ["com.github.moduth.blockcanary"],
+      "ARouter(阿里)": ["com.alibaba.android.arouter"],
+      "ExoPlayer(谷歌)": ["com.google.android.exoplayer", "exoplayer"],
+      "GSYVideoPlayer": ["com.shuyu.gsyvideoplayer"],
+      "JiaoZiVideoPlayer": ["cn.jzvd"]
+    }
+  },
+  "exclude_patterns": {
+    "jetbrains": ["org.jetbrains.annotations", "kotlin.", "j$."],
+    "json": ["com.alibaba.fastjson", "com.fasterxml.jackson"],
+    "launcher": [
+      "com.miui.home", "com.miui.mihome", "com.oppo.launcher", "com.vivo.launcher",
+      "com.huawei.android.launcher", "com.sonymobile.home", "com.meizu.flyme",
+      "com.oneplus.launcher", "com.lenovo.launcher", "com.zte.mifavor",
+      "com.bluestacks.home", "com.microvirt"
+    ],
+    "system": ["com.qualcomm", "com.mediatek", "cn.rolotech"],
+    "webview": ["org.chromium.", "com.android.webview", "com.google.android.webview"]
+  },
+  "exclude_prefixes": [
+    "android.", "androidx.", "java.", "javax.", "kotlin.", "dalvik.",
+    "libcore.", "sun.", "com.android.", "junit.", "org.junit.", "org.hamcrest.",
+    "org.xmlpull.", "org.w3c.", "org.json.", "org.xml.", "javax.xml."
+  ],
+  "privacy_categories": [
+    "推送与通讯", "广告与变现", "统计分析", "地图与位置",
+    "支付", "登录与认证", "社交与分享", "设备标识",
+    "云服务与存储", "即时通讯", "视频与直播", "安全与风控"
+  ],
+  "privacy_keywords": [
+    "ad", "ads", "advert", "analytics", "tracking",
+    "push", "notification", "map", "location", "lbs",
+    "pay", "payment", "wallet", "login", "auth", "sso", "oauth",
+    "share", "social", "weibo", "weixin", "cloud", "cos", "oss",
+    "stats", "metric", "im", "chat", "video", "live", "stream",
+    "oaid", "deviceid", "idfa"
+  ]
+}

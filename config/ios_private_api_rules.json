@@ -1,0 +1,156 @@
+{
+  "private_api_categories": {
+    "系统操作类": {
+      "description": "用于控制或访问系统级功能",
+      "risk_level": "高",
+      "apis": [
+        "LSApplicationWorkspace",
+        "LSApplicationProxy",
+        "LSWorkspace",
+        "SBApplication",
+        "SBRemoteNotificationServer",
+        "SBMediaController",
+        "SBAllWallpaperVariationIdentifiers",
+        "FBSWorkspace",
+        "FBApplicationInfo",
+        "BKApplication"
+      ]
+    },
+    "设备信息类": {
+      "description": "用于获取设备标识符或硬件信息",
+      "risk_level": "高",
+      "apis": [
+        "uniqueDeviceIdentifier",
+        "uniqueGlobalDeviceIdentifier",
+        "identifierForVendor",
+        "MACAddress",
+        "openUDID",
+        "IFVADvertisingIdentifier"
+      ]
+    },
+    "电话通信类": {
+      "description": "用于访问电话、短信、运营商信息",
+      "risk_level": "高",
+      "apis": [
+        "CTCarrier",
+        "CTTelephonyNetworkInfo",
+        "CTSMSMessage",
+        "MFMessageComposeViewController",
+        "MFMailComposeViewController"
+      ]
+    },
+    "隐私数据类": {
+      "description": "用于访问用户隐私数据",
+      "risk_level": "高",
+      "apis": [
+        "ABAddressBook",
+        "ABPerson",
+        "ABGroup",
+        "CP共享联系人",
+        "SLRequest",
+        "ACAccount"
+      ]
+    },
+    "应用控制类": {
+      "description": "用于控制其他应用的启动或行为",
+      "risk_level": "高",
+      "apis": [
+        "openSensitiveURL:withOptions:",
+        "openURL:",
+        "canOpenURL:",
+        "LSOpenFromURLSpec",
+        "SBSServer",
+        "MSHookMessageEx"
+      ]
+    },
+    "运行时注入类": {
+      "description": "用于方法替换或运行时修改",
+      "risk_level": "高",
+      "apis": [
+        "MSHookFunction",
+        "MSHookMessageEx",
+        "DYLAN_CODE_SIGNING",
+        "NSSystemAdministrationUsageDescription"
+      ]
+    },
+    "证书安全类": {
+      "description": "用于绕过证书验证或安全检查",
+      "risk_level": "高",
+      "apis": [
+        "allowsAnyHTTPSCertificate",
+        "allowsAnyCertificate",
+        "setValidatingCertificate",
+        "kSSLSessionOptionBreakOnServerAuth"
+      ]
+    },
+    "锁屏界面类": {
+      "description": "用于访问或控制锁屏界面",
+      "risk_level": "高",
+      "apis": [
+        "SpringBoard",
+        "lockcomplete",
+        "SBLockScreenViewController",
+        "SBPowerDownViewController",
+        "SB_FLIPBOARD_CLASS_NAME"
+      ]
+    },
+    "后台服务类": {
+      "description": "用于访问iOS后台服务",
+      "risk_level": "中",
+      "apis": [
+        "BKRegisterForDebugMessages",
+        "BKSHookConnectionToApp",
+        "FrontBoardServices",
+        "BackBoardServices"
+      ]
+    },
+    "调试相关类": {
+      "description": "用于应用调试或诊断",
+      "risk_level": "中",
+      "apis": [
+        "recursiveDescription",
+        "_autolayoutTrace",
+        "whyIsThisThingResizing",
+        "_shortDescription",
+        "_subviewDescription"
+      ]
+    }
+  },
+  "known_private_api_patterns": {
+    "class_name_patterns": [
+      "^_",
+      "^[a-z]+[A-Z].*Private$",
+      ".*PrivateFramework.*",
+      "SpringBoard",
+      "BackBoard",
+      "FrontBoard",
+      "AppKitPrivate",
+      "UIKitPrivate"
+    ],
+    "method_name_patterns": [
+      "dlopen",
+      "dlsym",
+      "MSHook",
+      "IMTracker",
+      "_CT",
+      "SB_",
+      "FBSS",
+      "BKS",
+      "assertion",
+      "ubiquity"
+    ],
+    "selector_patterns": [
+      "permanen",
+      "timestamp",
+      "certificate",
+      "keychain",
+      "sandbox",
+      "MachPort",
+      "ServerPort"
+    ]
+  },
+  "rejection_reasons": {
+    "2.5.1": "Guideline 2.5.1 - 使用了私有API",
+    "2.5.2": "Guideline 2.5.2 - 可能导致性能或稳定性问题"
+  }
+}
